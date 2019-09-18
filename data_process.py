@@ -44,7 +44,7 @@ def data_process(data_path,train_split,output_path):
     # print(label)
 
     # 获取文本的数量和标签的种类
-    text_len = len(text) - 1
+    text_len = len(text)
     label_counter = Counter(label)
     label_class = [i for i in label_counter.keys()]
     class_num = len(label_class)
